@@ -113,10 +113,11 @@
           <ul>
             <li>tools of the trade</li>
             <li>a starter kit</li>
+            <li>cartodb-nodejs</li>
             <li>Atom for GIS</li>
             <li>geocoding and routing</li>
-            <li>bonus track: terminal maps</li>
-            <li>bonus track: voice</li>
+            <li>bonus track: maps within the terminal</li>
+            <li>goodies</li>
           </ul>
         </section>
 
@@ -144,10 +145,16 @@
           <blockquote>
             Improve customer satisfaction by 15%
           </blockquote>
+          <aside class="notes">
+            Carto is aiming its marketing discourse at "decision makers", and therefore may or may not convince you as a GIS professional or engineer
+          </aside>
         </section>
 
         <section>
           <img src="img/fry.jpg" alt="" />
+          <aside class="notes">
+            But besides that it's frankly quite an incredible platform
+          </aside>
         </section>
 
         <section>
@@ -173,7 +180,7 @@
 
         <section>
           <p>Disclaimer: I used to work at Carto</p>
-          <p class="fragment fade-in">Disclaimer 2: Carto(DB) is originally a Vizzuality spin-off</p>
+          <p class="fragment fade-in">Disclaimer 2 / fun fact: Carto(DB) is originally a Vizzuality spin-off</p>
         </section>
 
 
@@ -208,6 +215,11 @@
         <section>
           <h3>Tools of the trade: a shell and a terminal</h3>
           <img src="img/soupe.jpg" alt="">
+          <aside class="notes">
+            the best soup is made in old pots
+            coming from a more abstract programming background,
+            rediscovering old tricks alwyas feels great
+          </aside>
         </section>
 
         <section>
@@ -227,6 +239,83 @@
             figlet/figlet-cli
           </aside>
         </section>
+
+
+        <section>
+          <h2>a starter kit</h2>
+        </section>
+
+        <section>
+          <blockquote>«A beginning is a very delicate time»</blockquote>
+          <img src="img/irulan.gif">
+          <aside class="notes">
+            At vizzuality we need to make quick prototypes without thinking too much about the toolchain
+          </aside>
+        </section>
+
+        <section>
+          <p>Enter</p>
+          <img src="img/yeoman.png" alt="">
+        </section>
+
+        <section>
+          <p>Yeoman + Carto</p>
+          <pre class="fragment fade-out"><code>
+$ npm i -g yo generator-cartodb
+$ yo cartodb
+          </code></pre>
+          <pre class="fragment fade-in"><code data-noescape>
+$ <s>sudo</s> npm i -g yo generator-cartodb
+$ <s>sudo</s> yo cartodb
+          </code></pre>
+          <aside class="notes">
+            note: installing NPM modules is arguably a bad practice.
+            Except when it makes sense, like here (because you don't have run npm init yet, so no binaries can be available)
+            you should not have to sudo to install NPM modules, even globally
+            <a href="https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md">see here</a>
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/yo1.gif">
+        </section>
+
+        <section>
+          local server
+          <img src="img/yo2.gif">
+        </section>
+
+        <section>
+          liveReload
+          <img src="img/yo3.gif">
+        </section>
+
+        <section>
+          eslint
+          <img src="img/yo4.gif">
+        </section>
+
+
+        <section>
+          <h2>Atom for GIS</h2>
+        </section>
+
+        <section>
+          <h2>CartoDB node.js</h2>
+        </section>
+
+        <section>
+          <h2>geocoding and routing</h2>
+        </section>
+
+        <section>
+          <h2>bonus track: maps within the terminal</h2>
+        </section>
+
+        <section>
+          <h2>goodies</h2>
+        </section>
+
 
         <section>
           <img src="img/test2.gif" class="stretch">
@@ -248,6 +337,9 @@
         </section>
       </div>
     </div>
+
+
+
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
