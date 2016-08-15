@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Command-Line Geography</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/custom.css">
@@ -28,6 +28,207 @@
           <h1>Command-Line Geography</h1>
         </section>
         <section>
+          <p>
+            Hi, I'm Erik :)
+          </p>
+        </section>
+        <section>
+          <img src="img/vizz_logo.png" alt="">
+          <p>
+            I live in Madrid and I'm an engineer at Vizzuality.
+          </p>
+        </section>
+        <section>
+          <p>
+            Vizzuality builds amazing mapping and viz projects, essentially for NGOs.
+          </p>
+        </section>
+        <section>
+          <img src="img/vizz1.png" alt="">
+        </section>
+        <section>
+          <img src="img/vizz2.png" alt="">
+        </section>
+        <section>
+          <p>
+            We mostly have a <b>web-based</b> approach to GIS.
+          </p>
+          <p class="fragment fade-in">
+            <b>Leaflet, D3, Carto(DB).js, PostGIS...</b>
+          </p>
+          <p class="fragment fade-in">
+            React, Redux, Backbone, Webpack...
+          </p>
+          <p class="fragment fade-in">
+            Ruby on Rails, Python, Postgre...
+          </p>
+        </section>
+        <section>
+          <p>
+            Aaaaaand we are <blink>
+              <b>recruiting</b>
+            </blink> !
+          </p>
+          <img src="img/wanted.gif" alt="" />
+        </section>
+        <section>
+          <p>So, I'm a front-end engineer</p>
+        </section>
+        <section>
+          <img src="img/erik.jpg" alt="" />
+          <aside class="notes">
+            I had an early interest in maps but somehow got lost in geeking
+          </aside>
+        </section>
+        <section>
+          <img src="img/books.jpg" alt="" />
+          <aside class="notes">
+            And even though I'm buying a lot of books to catch up (I said buying, not necessarily reading)
+          </aside>
+        </section>
+        <section>
+          <img src="img/impostor.jpg" alt="" />
+          <aside class="notes">
+            this is how I feel when talking at FOSS4G, like an usurper
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/foss4g.png" alt="" />
+          <aside class="notes">
+            but aren't we "building bridges" here?
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/over-engineering.png" class="stretch">
+          <small class="caption"><a href="http://www.xkcd.com/">xkcd</a></small>
+          <aside class="notes">
+            Sometimes as a dev you get caught getting more interested in the tooling, in the process of making instead of the actual thing you're trying to make
+          </aside>
+        </section>
+
+        <section>
+          <p>Summary:</p>
+          <ul>
+            <li>tools of the trade</li>
+            <li>a starter kit</li>
+            <li>Atom for GIS</li>
+            <li>geocoding and routing</li>
+            <li>bonus track: terminal maps</li>
+            <li>bonus track: voice</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tools of the trade</h2>
+        </section>
+
+        <section>
+          <h3>Carto(DB)</h3>
+        </section>
+
+        <section>
+          <img src="img/carto1.gif" alt="" />
+        </section>
+
+        <section>
+          <img src="img/carto2.gif" alt="" />
+        </section>
+
+        <section>
+          <h4>Define Carto:</h4>
+          <blockquote>
+            Empower organizations to optimize operational performance, strategic investments, and everyday decisions with CARTO Engine
+          </blockquote>
+          <blockquote>
+            Improve customer satisfaction by 15%
+          </blockquote>
+        </section>
+
+        <section>
+          <img src="img/fry.jpg" alt="" />
+        </section>
+
+        <section>
+          <h4>Carto is basically:</h4>
+          <ul>
+            <li class="fragment fade-in">a PaaS Postgres/PostGIS instance</li>
+            <li class="fragment fade-in">a <b>supercharged</b> Postgres/PostGIS instance: geocoding, routing, basemaps, curated open datasets...</li>
+            <li class="fragment fade-in">a set of REST APIs</li>
+            <li class="fragment fade-in">a semi-WYSIWYG GIS piece of software (the <b>Builder</b>)</li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h4>Why Carto?</h4>
+          <ul>
+            <li class="fragment fade-in">kind learning curve</li>
+            <li class="fragment fade-in">1-stop-shop</li>
+            <li class="fragment fade-in">serves as a cheap and convenient back-office (downside: you need connectivity)</li>
+            <li class="fragment fade-in">the Builder is amazing for prototyping</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Disclaimer: I used to work at Carto</p>
+          <p class="fragment fade-in">Disclaimer 2: Carto(DB) is originally a Vizzuality spin-off</p>
+        </section>
+
+
+        <section>
+          <h3>Tools of the trade: Atom</h3>
+        </section>
+
+        <section>
+          <img src="img/atom_screen.gif" alt="">
+          <aside class="notes">
+            What would solely be a nice text editor...
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/atom_webdev.gif" alt="">
+          <p>Chrome + Electron</p>
+          <aside class="notes">
+            becomes awesome because it is built on top of Chrome + Electron.
+            Extending this IDE is a frontender paradise.
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/atom_comic.gif" alt="">
+          <p>Chrome + Electron</p>
+          <aside class="notes">
+            is it cool? think so. is it useful? meh
+          </aside>
+        </section>
+
+        <section>
+          <h3>Tools of the trade: a shell and a terminal</h3>
+          <img src="img/soupe.jpg" alt="">
+        </section>
+
+        <section>
+          <h4>Namely:</h4>
+          <ul>
+            <li>zsh</li>
+            <li>oh-my-zsh</li>
+            <li>iTerm 2</li>
+            <li>node.js, npm, python, etc...</li>
+            <li><i>bonus: the Input Mono font</i></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="img/figlet.gif" alt="">
+          <aside class="notes">
+            figlet/figlet-cli
+          </aside>
+        </section>
+
+        <section>
           <img src="img/test2.gif" class="stretch">
           <aside class="notes">
             Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
@@ -37,16 +238,13 @@
           <img src="img/atom.png" class="stretch">
         </section>
         <section>
-          <img src="img/over-engineering.png" class="stretch">
-          <small class="caption"><a href="http://www.xkcd.com/">xkcd</a></small>
-          <aside class="notes">
-            Sometimes as a dev you get caught getting more interested in the tooling, in the process of making instead of the actual thing you're trying to make
-         </aside>
-        </section>
-        <section>
           Slide 2
           <p class="fragment grow"><strong>grow</strong></p>
           <p class="fragment fade-in">shrink</p>
+        </section>
+        <section>
+
+          <img src="img/wanted2.gif" alt="" />
         </section>
       </div>
     </div>

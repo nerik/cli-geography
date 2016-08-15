@@ -54,3 +54,26 @@ section.has-light-background {
   border: 0;
 	box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.40);
 }
+
+blink, .blink {
+  -webkit-animation: blink 1s step-end infinite;
+  -moz-animation: blink 1s step-end infinite;
+  -o-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-moz-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-o-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@keyframes blink {
+  67% { opacity: 0 }
+}
