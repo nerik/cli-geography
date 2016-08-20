@@ -33,6 +33,11 @@
           </p>
         </section>
         <section>
+          <p>
+            github, twitter: @nerik
+          </p>
+        </section>
+        <section>
           <img src="img/vizz_logo.png" alt="">
           <p>
             I live in Madrid and I'm an engineer at Vizzuality.
@@ -113,10 +118,10 @@
           <ul>
             <li>tools of the trade</li>
             <li>a starter kit</li>
-            <li>cartodb-nodejs</li>
-            <li>Atom for GIS</li>
-            <li>geocoding and routing</li>
-            <li>bonus track: maps within the terminal</li>
+            <li>CARTO on the command line</li>
+            <li>Atom for webmapping</li>
+            <li>geocoding</li>
+            <li>bonus track: maps in the terminal</li>
             <li>goodies</li>
           </ul>
         </section>
@@ -281,30 +286,30 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          local server
+          <h4>local server</h4>
           <img src="img/yo2.gif">
         </section>
 
         <section>
-          liveReload
+          <h4>liveReload</h4>
           <img src="img/yo3.gif">
         </section>
 
         <section>
-          eslint
+          <h4>eslint</h4>
           <img src="img/yo4.gif">
         </section>
 
         <section>
           <h3>a prototyping toolchain</h3>
           <p>
-            Uses NPM as a task runner (add gulp or grunt as you go)
+            Uses NPM as a task runner<br> (add gulp or grunt as you go)
           </p>
           <p>
-            Uses cat to bundle JS (use webpack or browserify as you go)
+            Uses cat to bundle JS <br>(use webpack or browserify as you go)
           </p>
           <p>
-            <b>Tries to be a compromise between index.html with someJS, and overly complicated toolchains</b>
+            <b>Tries to be a compromise between too simple and overly complicated toolchains</b>
              (1000 lines gulpfiles, obscure webpack config, etc)
           </p>
 
@@ -312,10 +317,8 @@ $ <s>sudo</s> yo cartodb
 
 
 
-
-
         <section>
-          <h2>cartodb-nodejs</h2>
+          <h2>CARTO on the command line</h2>
         </section>
 
         <section>
@@ -364,15 +367,16 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          <h2>SQL API</h2>
+          <h3>SQL API</h3>
         </section>
 
         <section>
-          <img src="node1.png" alt="">
+          <img src="img/node1.png" alt="">
         </section>
 
         <section>
-          <img src="node2.png" alt="">
+          <h4>a simple select (JSON)</h4>
+          <img src="img/node2.png" alt="">
         </section>
 
         <section>
@@ -380,10 +384,12 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          <img src="node3.png" alt="">
+          <h4>the -f (--format) option</h4>
+          <img src="img/node3.png" alt="">
         </section>
         <section>
-          <img src="node4.png" alt="">
+          <h4>CSVKIT</h4>
+          <img src="img/node4.png" alt="">
         </section>
 
         <section>
@@ -391,13 +397,15 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          <img src="node5.png" alt="">
+          <h4>GeoJSON output</h4>
+          <img src="img/node5.png" alt="">
         </section>
         <section>
-          <img src="node6.png" alt="">
+          <h4>piping to geojsonio</h4>
+          <img src="img/node6.png" alt="">
         </section>
         <section>
-          <img src="node7.png" alt="">
+          <img src="img/node7.png" alt="">
         </section>
 
         <section>
@@ -405,15 +413,17 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          <img src="node8.png" alt="">
+          <h4>username (-u) not enough for write ops</h4>
+          <img src="img/node8.png" alt="">
         </section>
 
         <section>
-          <img src="node9.png" alt="">
+          <h4>specify api key (-a / --api_key)</h4>
+          <img src="img/node9.png" alt="">
         </section>
 
         <section>
-          <img src="node10.png" alt="">
+          <img src="img/node10.png" alt="">
         </section>
 
         <section>
@@ -422,10 +432,12 @@ $ <s>sudo</s> yo cartodb
 
 
         <section>
-          <img src="node-import.gif" alt="">
+          <h4>shapefile -> carto</h4>
+          <img src="img/node-import.gif" alt="">
         </section>
         <section>
-          <img src="node12.png" alt="">
+          <h4>--url</h4>
+          <img src="img/node12.png" alt="">
         </section>
 
 
@@ -454,57 +466,119 @@ $ apm install carto-api
         </section>
 
         <section>
-          linter
+          <h4>linter</h4>
           <img src="img/yo4.gif">
         </section>
 
         <section>
-          highlight-selected
+          <h4>highlight-selected</h4>
           <img src="img/apm1.gif">
         </section>
 
         <section>
-          emmet
+          <h4>emmet</h4>
           <img src="img/apm4.gif">
         </section>
 
         <section>
-          color-picker
+          <h4>color-picker</h4>
           <img src="img/apm2.gif">
         </section>
 
         <section>
-          pigments
+          <h4>pigments</h4>
           <img src="img/apm3.gif">
         </section>
 
         <section>
-          language-carto
+          <h4>language-carto</h4>
           <img src="img/apm6.png">
         </section>
 
         <section>
-          carto-api: run SQL
-          <img src="img/apm6.png">
-          <aside class="notes">
-            CSV, SHP, SVG, KML, SpatiaLite and GeoJSON.
-          </aside>
+          <h3>Remember CARTO APIS? Now in Atom!</h3>
         </section>
 
         <section>
-          carto-api: import
-          <img src="img/apm6.png">
+          <h4>run a SQL query, get some CSV</h4>
+          <img src="img/atom1.gif" alt="">
+        </section>
+
+        <section>
+          <h4>let's feed some GeoJSON to L</h4>
+          <img src="img/atom2.gif" alt="">
+        </section>
+
+        <section>
+          <h4>and some SVG, because why not</h4>
+          <img src="img/atom3.gif" alt="">
+        </section>
+
+        <section>
+          <h4>file import from the tree view</h4>
+          <img src="img/atom-import.gif" alt="">
+        </section>
+
+        <section>
+          <h4>Improve customer satisfaction by 15% !</h4>
+          <img style="background: white" src="img/customer.png" alt="">
+        </section>
+
+        <section>
+          <h3>apm install carto-api</h3>
+          PRs and insults -> @nerik
         </section>
 
 
 
         <section>
-          <h2>CartoDB node.js</h2>
+          <h2>geocoding</h2>
         </section>
 
         <section>
-          <h2>geocoding and routing</h2>
+          <h4>CARTO provides geocoding<br><b>for various entities, points and polys</b></h4>
+          <img src="img/geocoding.gif" alt="">
         </section>
+
+        <section>
+          <h4>CARTO provides geocoding and routing <br><b>at SQL level</b></h4>
+          <img src="img/geocoding0.png" alt="">
+        </section>
+
+        <section>
+          <h4>which means, also in your shell :)</h4>
+          <img src="img/geocoding1.gif" alt="">
+        </section>
+        <section>
+          <h4>street-level</h4>
+          <img src="img/geocoding2.gif" alt="">
+        </section>
+        <section>
+          <h4>carto-geocode-sql</h4>
+          <img src="img/geocoding3.gif" alt="">
+        </section>
+        <section>
+          <h4>carto-geocode-sql</h4>
+          <img src="img/geocoding4.gif" alt="">
+        </section>
+        <section>
+          <h4>mötley crüe geocoding</h4>
+          <img src="img/geocoding5.gif" alt="">
+        </section>
+
+        <section>
+          <h4>mötley crüe geocoding</h4>
+          <img src="img/geocoding5.gif" alt="">
+        </section>
+
+        <section>
+          <h4>geocoding in Atom</h4>
+          <img src="img/atom-geocode.gif" alt="">
+        </section>
+
+
+
+
 
         <section>
           <h2>bonus track: maps within the terminal</h2>
@@ -523,23 +597,10 @@ $ apm install carto-api
         <section>
 
           <h1>Thanks !</h1>
+          <p>@nerik</p>
           <em>soundtrack: Ibrahim Ferrer, Ólafur Arnalds, Jordi Savall, The Cure, Bill Withers</em>
         </section>
 
-        <section>
-          <img src="img/test2.gif" class="stretch">
-          <aside class="notes">
-            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-         </aside>
-        </section>
-        <section>
-          <img src="img/atom.png" class="stretch">
-        </section>
-        <section>
-          Slide 2
-          <p class="fragment grow"><strong>grow</strong></p>
-          <p class="fragment fade-in">shrink</p>
-        </section>
 
       </div>
     </div>
