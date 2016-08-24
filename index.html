@@ -68,7 +68,7 @@
             React, Redux, Backbone, Webpack...
           </p>
           <p class="fragment fade-in">
-            Ruby on Rails, Python, Postgre, PostGIS...
+            Ruby on Rails, Python, Postgre...
           </p>
         </section>
         <section>
@@ -159,16 +159,24 @@
           <blockquote>
             Empower organizations to optimize operational performance, strategic investments, and everyday decisions with CARTO Engine
           </blockquote>
-          <blockquote>
-            Improve customer satisfaction by 15%
-          </blockquote>
+
           <aside class="notes">
-            Carto is aiming its marketing discourse at "decision makers", and therefore may or may not convince you as a GIS professional or engineer
+            Carto is aiming its marketing discourse at "decision makers",
           </aside>
         </section>
 
         <section>
+          <blockquote>
+            Improve customer satisfaction by 15%
+          </blockquote>
           <img src="img/fry.jpg" alt="" />
+          <aside class="notes">
+            But besides that it's frankly quite an incredible platform
+          </aside>
+        </section>
+
+        <section>
+          <h2>CARTO is brilliant</h2>
           <aside class="notes">
             But besides that it's frankly quite an incredible platform
           </aside>
@@ -182,14 +190,15 @@
             <li class="fragment fade-in">a set of REST APIs</li>
             <li class="fragment fade-in">a semi-WYSIWYG GIS piece of software (the <b>Builder</b>)</li>
           </ul>
-
+          <aside class="notes">
+            batteries included!
+          </aside>
         </section>
 
         <section>
           <h4>Why Carto?</h4>
           <ul>
             <li class="fragment fade-in">kind learning curve</li>
-            <li class="fragment fade-in">1-stop-shop</li>
             <li class="fragment fade-in">serves as a cheap and convenient back-office (downside: you need connectivity)</li>
             <li class="fragment fade-in">the Builder is amazing for prototyping</li>
           </ul>
@@ -208,7 +217,7 @@
         <section>
           <img src="img/atom_screen.gif" alt="">
           <aside class="notes">
-            What would solely be a nice text editor...
+            What would solely be a sleek text editor...
           </aside>
         </section>
 
@@ -273,13 +282,13 @@
         <section>
           Vizzuality strong suit:
           <ul>
-            <li>dedicated exploration phase for each project</li>
-            <li>data + interactivity</li>
-            <li>client is heavily involved in it (co-creation)</li>
+            <li class="fragment fade-in">dedicated exploration phase for each project:<br>
+            data + interactivity</li>
+            <li class="fragment fade-in">client is heavily involved in it (co-creation)</li>
           </ul>
 
-        <p>
-            <b>We need quick and efficient tools for prototyping.</b>
+        <p class="fragment fade-in">
+            <b>We need an efficient tool for bootstrapping prototypes/projects.</b>
         </p>
         </section>
 
@@ -299,7 +308,7 @@ $ <s>sudo</s> npm i -g yo generator-cartodb
 $ <s>sudo</s> yo cartodb
           </code></pre>
           <aside class="notes">
-            note: installing NPM modules is arguably a bad practice.
+            note: installing NPM modules globally is arguably a bad practice.
             Except when it makes sense, like here (because you don't have run npm init yet, so no binaries can be available)
             you should not have to sudo to install NPM modules, even globally
             <a href="https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md">see here</a>
@@ -326,14 +335,14 @@ $ <s>sudo</s> yo cartodb
         </section>
 
         <section>
-          <h3>a prototyping toolchain</h3>
-          <p>
-            Uses NPM as a task runner<br> (add gulp or grunt as you go)
+          <h3>yo cartodb</h3>
+          <p class="fragment fade-in">
+            Uses NPM as a task runner<br> (add gulp, grunt when needed)
           </p>
-          <p>
-            Uses cat to bundle JS <br>(use webpack or browserify as you go)
+          <p class="fragment fade-in">
+            Uses cat to bundle JS <br>(use webpack, browserify when needed)
           </p>
-          <p>
+          <p class="fragment fade-in">
             <b>Tries to be a compromise between too simple and overly complicated toolchains</b>
              (1000 lines gulpfiles, obscure webpack config, etc)
           </p>
@@ -470,6 +479,12 @@ $ <s>sudo</s> yo cartodb
         </section>
 
 
+        <section>
+          <h4>Improve customer satisfaction by 15% !</h4>
+          <img style="background: white" src="img/customer.png" alt="">
+        </section>
+
+
 
         <section>
           <h2 class="fragment current-visible">Atom for GIS</h2>
@@ -549,7 +564,7 @@ $ apm install carto-api
         </section>
 
         <section>
-          <h4>Improve customer satisfaction by 15% !</h4>
+          <h4>Some heavy customer satisfaction going on here !</h4>
           <img style="background: white" src="img/customer.png" alt="">
         </section>
 
@@ -570,12 +585,19 @@ $ apm install carto-api
         </section>
 
         <section>
+          <h2>:heart: Mapzen</h2>
+        </section>
+
+
+
+
+        <section>
           <h4>CARTO provides geocoding and routing <br><b>at SQL level</b></h4>
           <img src="img/geocoding0.png" alt="">
         </section>
 
         <section>
-          <h4>which means, also in your shell :)</h4>
+          <h4>which means, also in your beloved terminal - here, a named place </h4>
           <img src="img/geocoding1.gif" alt="">
         </section>
         <section>
@@ -583,11 +605,16 @@ $ apm install carto-api
           <img src="img/geocoding2.gif" alt="">
         </section>
         <section>
-          <h4>carto-geocode-sql</h4>
+          <h4>carto-geocode-sql<br>
+          turns location strings to SQL queries</h4>
           <img src="img/geocoding3.gif" alt="">
+          <aside class="notes">
+            1 geocode type -> 1 different SQL function call (with different signatures etc)
+            carto-geocode-sql 'normalizes', should work for 95% of use cases (and + 15% customer satisfaction)
+          </aside>
         </section>
         <section>
-          <h4>carto-geocode-sql</h4>
+          <h4>using it in a subshell, for the carto cli</h4>
           <img src="img/geocoding4.gif" alt="">
         </section>
         <section>
@@ -603,10 +630,10 @@ $ apm install carto-api
         <section>
           <h4>geocoding in Atom</h4>
           <img src="img/atom-geocode.gif" alt="">
+          <aside class="notes">
+            Stop bothering copy pasting latlon pairs !
+          </aside>
         </section>
-
-
-
 
 
         <section>
@@ -626,14 +653,13 @@ $ apm install carto-api
           <img src="img/gj2.png" alt="">
         </section>
         <section>
-          <h4>heed the "-" !</h4>
+          <h4>cartodb | gj2ascii (heed the "-" !)</h4>
           <img src="img/gj3.png" alt="">
+          <aside class="notes">
+            let's just turn a SQL query to an emoji map!
+          </aside>
         </section>
         <section data-background-size="contain" data-background-image="img/gj4.png" >
-        </section>
-
-        <section>
-          <h2>goodies</h2>
         </section>
 
 
@@ -646,7 +672,7 @@ $ apm install carto-api
 
         <section>
 
-          <h1>Thanks !</h1>
+          <h1>Thanks!</h1>
           <p>@nerik</p>
           <em>soundtrack: Ibrahim Ferrer, Ólafur Arnalds, Jordi Savall, The Cure, Bill Withers</em>
         </section>
